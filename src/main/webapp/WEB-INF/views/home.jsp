@@ -18,7 +18,7 @@
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script src="<c:url value="/resources/js/script.js"/>"
 	type="text/javascript"></script>
-<title>Brick| Welcome</title>
+<title>Brick| Welcomegg</title>
 </head>
 
 <body>
