@@ -1,8 +1,7 @@
 package com.pmi.brick.web;
-
-import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
+import java.util.Random;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
@@ -21,6 +20,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -81,6 +81,14 @@ public class HomeController {
 
 		return "admin";
 
+	}
+
+	@RequestMapping(value = "getRandom",method = RequestMethod.GET)
+	public @ResponseBody String getRandom(){
+		Random r = new Random();
+		String val = "Random:"+r.nextFloat()+"On:"+new Date().toString();
+		return val;
+		
 	}
 
 }

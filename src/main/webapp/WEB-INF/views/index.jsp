@@ -11,7 +11,9 @@
 	href="<c:url value="/resources/css/style.css" />">
 
 <link rel="shortcut icon" href="<c:url value="/resources/favico.png"/>"
+
 	type="image/x-icon">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:300&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script src="<c:url value="/resources/js/jquery-1.4.3.js"/>"
 	type="text/javascript"></script>
@@ -20,6 +22,18 @@
 <script src="<c:url value="/resources/js/script.js"/>"
 	type="text/javascript"></script>
 <title>Brick| Welcome</title>
+<style>
+#imgblock span{
+font-family: 'Roboto'
+
+}
+#exampleE p,#example h1{
+font-family: 'Roboto'
+}
+label{
+font-family: 'Roboto'
+}
+</style>
 </head>
 
 <body>
@@ -30,27 +44,13 @@
 		</span> <a id="ent" href="login">Вхід </a> <a id="reg" href="registration">Реєстрація</a>
 	</div>
 	<div id="main">
-		<!--<div id = "enter" >
-<form action="jsp/appsdata.jsp" method="post">
- <fieldset class="dop">
-      <label for="_email">E-mail</label>
-      <input type="email" name="email" id="_email" placeholder="" required />
-      
-      
-	   <label for="_password">Пароль</label>
-      <input type="password" name="password" id="_password" required />
-	  </fieldset>
-	  <fieldset class="bottom">
-      <button type="submit" id="ssubmit" >Вхід</button>
-    </fieldset>
-	</form>
-</div>-->
+
 		<div id="right">
 			<div id="images">
 				<div id="imgblock">
 					<img src="<c:url value="/resources/images/search.png"/>"></img>
 					<h3>
-						<span>1. Знайди завдання</span>
+						<span>Знайди завдання</span>
 						<p>Серед тисяч завдань знайди таке, яке тобі під силу
 							виконати.</p>
 						<h3>
@@ -58,14 +58,14 @@
 				<div id="imgblock">
 					<img src="<c:url value="/resources/images/clock.png"/>"></img>
 					<h3>
-						<span>2. Підтвердження</span>
+						<span> Підтвердження</span>
 						<p>Почекай кілька хвилин і отримай підтвердження від
 							роботодавця.</p>
 				</div>
 				<div id="imgblock">
 					<img src="<c:url value="/resources/images/done1.png"/>"></img>
 					<h3>
-						<span>3. Виконай роботу</span>
+						<span>Виконай роботу</span>
 						<p>Отримай підтвердження і приступай до виконання свого
 							завдання</p>
 					</h3>
@@ -73,7 +73,7 @@
 				<div id="imgblock">
 					<img src="<c:url value="/resources/images/Money.png"/>"></img>
 					<h3>
-						<span>4.Отримай гроші </span>
+						<span>Отримай гроші </span>
 						<p>Виконай завдання вчасно і правильно та отримай за нього
 							зарплатню</p>
 					</h3>
