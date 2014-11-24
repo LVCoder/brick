@@ -15,6 +15,7 @@
 <script src="<c:url value="/resources/js/jquery-1.4.3.js"/>"
 	type="text/javascript"></script>
 <script src="<c:url value="/resources/js/jquery-1.7.2.min.js"/>"></script>
+<script src = "<c:url value="/resources/js/script.js"/>" type = "text/javascript"></script>
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script src="<c:url value="/resources/js/script.js"/>"
 	type="text/javascript"></script>
@@ -89,9 +90,9 @@ i = setInterval(hello,3000);
 
 
 				<label for="_password">Пароль<span>*</span></label> <input
-					type="password" name="password" id="_password" required /> <label
+					type="password" class = "pas" name="password" id="_password" required /> <label
 					for="_repeat">Повторіть пароль<span>*</span></label> <input
-					type="password" name="repeat" id="_repeat" required />
+					type="password" class = "pas" name="repeat" id="_repeat" required />
 
 
 
@@ -101,7 +102,7 @@ i = setInterval(hello,3000);
 
 
 			<fieldset class="bottom">
-				<button type="submit" id="ssubmit" onclick="validate(this.form)">Зареєструватися</button>
+				<button type="submit" id="ssubmit" onclick="return validate(this.form)">Зареєструватися</button>
 			</fieldset>
 		</form>
 
